@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table with Search</title>
+    <style>
+        /* Table Container Styles */
+        .table-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+            position: relative;
+        }
+
+        /* Centered Heading Styles */
+        .table-title {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: #0f80dd;
+            margin-bottom: 10px;
+        }
+
+        /* Search Bar Styles */
+        .search-bar {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .search-bar:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            background-color: #f1f1f1;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 0.9em;
+            padding: 5px;
+            margin-left: 5px;
+            width: 150px;
+        }
+
+        .search-bar input::placeholder {
+            color: #aaa;
+        }
+
+        .search-bar svg {
+            width: 16px;
+            height: 16px;
+            fill: #2196F3;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+        }
+
+        /* Table Header */
+        thead th {
+            background-color: #2196F3;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        /* Table Rows */
+        tbody tr {
+            border: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover Effect for Rows */
+        tbody tr:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        /* Table Cells */
+        td, th {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        /* Empty Cells */
+        tbody td {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <!-- Centered Title -->
+        <h1 class="table-title">Fabric Dashboard</h1>
+        
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M21.53 20.47l-4.81-4.81a8.5 8.5 0 10-1.06 1.06l4.81 4.81a.75.75 0 101.06-1.06zM10.5 18a7.5 7.5 0 110-15 7.5 7.5 0 010 15z"/>
+            </svg>
+        </div>
+
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Material Type</th>
+                    <th>Material Code</th>
+                    <th>Rack Number</th>
+                    <th>Bin Number</th>
+                    <th>PO Quantity</th>
+                    <th>Actual Quantity</th>
+                    <th>Shade</th>
+                    <th>Width</th>
+                    <th>Roll Number</th>
+                    <th>No. of Rolls</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 15 Empty Rows -->
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

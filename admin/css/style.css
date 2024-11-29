@@ -1,0 +1,258 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* Body Styles */
+body {
+    background: #f4f4f4 url(../images/bg.gif) repeat top left; /* Background image */
+    color: #333; /* Text color */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Headings */
+h1 {
+    font-size: 45px;
+    color: #444; /* Darker color for better readability */
+    text-align: center; /* Centered text */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+h1 span {
+    color: #ffa800; /* Accent color for emphasis */
+}
+
+/* Link Styles */
+a {
+    color: #007bff; /* Primary link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+/* Paragraph Styles */
+p {
+    padding: 5px 0;
+}
+
+/* Wrapper Styles */
+.wrapper, .wrapper_admin {
+    width: 960px;
+    margin: 20px auto; /* Added margin for spacing */
+    min-height: 550px;
+    background: #fff; /* White background for wrappers */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Padding inside the wrapper */
+}
+
+/* Box Styles */
+.box {
+    width: 49%;
+}
+
+/* Float Helpers */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Back Link */
+a.back {
+    color: #777;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+}
+
+/* Form Styles */
+.form_wrapper {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 20px auto; /* Added margin for spacing */
+    width: 350px;
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.form_wrapper h3 {
+    padding: 20px;
+    background-color: #444; /* Dark background for header */
+    color: #fff; /* White text */
+    font-size: 25px;
+    border-bottom: 1px solid #ddd;
+    text-align: center; /* Centered text */
+}
+
+.form_wrapper form {
+    display: none;
+}
+
+.form_wrapper .column {
+    width: 47%;
+    float: left;
+}
+
+form.active {
+    display: block;
+}
+
+form.login, form.register, form.forgot_password {
+    width: 100%; /* Full width for forms */
+}
+
+.form_wrapper a {
+    text-decoration: none;
+    color: #777;
+    font-size: 12px;
+}
+
+.form_wrapper a:hover {
+    color: #000; /* Darker color on hover */
+}
+
+.form_wrapper label {
+    display: block;
+    padding: 10px 30px 0;
+    margin: 10px 0 0;
+    font-weight: bold; /* Bold labels */
+}
+
+.form_wrapper input[type="text"],
+.form_wrapper input[type="password"] {
+    border: 1px solid #E5E5E5;
+    background: #FFFFFF;
+    margin: 5px 30px;
+    padding: 10px; /* Increased padding */
+    font-size: 16px;
+    width: calc(100% - 60px); /* Full width minus padding */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.form_wrapper input[type="text"]:focus,
+.form_wrapper input[type="password"]:focus {
+    background: #feffef; /* Light background on focus */
+    outline: none; /* Remove outline */
+}
+
+.form_wrapper .bottom {
+    background-color: #444; /* Dark background for the bottom section */
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    clear: both;
+    color: #fff; /* White text */
+    text-shadow: 1px 1px 1px #000; /* Subtle text shadow */
+    text-align: center; /* Centered text */
+    padding: 10px 0; /* Padding for spacing */
+}
+
+.form_wrapper .bottom a {
+    display: block;
+    padding: 10px;
+    text-align: right;
+    color: #ffa800; /* Accent color */
+    text-shadow: 1px 1px 1px #000; /* Subtle text shadow */
+}
+
+.form_wrapper a.forgot {
+    float: right;
+    font-style: italic;
+    line-height: 24px;
+    color: #ffa800; /* Accent color */
+    text-shadow: 1px 1px 1px #fff; /* Subtle text shadow */
+}
+
+.form_wrapper a.forgot:hover {
+    color: #000; /* Darker color on hover */
+}
+
+.form_wrapper div.remember {
+    float: left;
+    width: 140px;
+    margin: 20px 0 20px 30px;
+    font-size: 11px;
+}
+
+.form_wrapper div.remember input {
+    float: left;
+    margin: 2px 5px 0 0;
+}
+
+.form_wrapper span.error {
+    color: red; /* Error text color */
+    font-size: 11px;
+    font-style: italic;
+    display: block;
+    margin: 15px 30px;
+}
+
+.form_wrapper input[type="submit"] {
+    background: #007bff; /* Primary button color */
+    border: none; /* No border */
+    color: #fff; /* White text */
+    font-family: "Roboto", sans-serif; /* Modern font */
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px; /* Increased padding */
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+    float: right;
+    margin: 15px 20px 10px 10px;
+    border-radius: 4px; /* Rounded corners */
+    transition: background 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.form_wrapper input[type="submit"]:hover {
+    background: #0056b3; /* Darker button color on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.clock {
+    float: right;
+    margin-right: -80px;
+}
+
+.date {
+    float: left;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.trans {
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    opacity: 0.95; /* Slightly more opaque */
+    top: 0;
+    min-height: 200px;
+    height: 100%;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent background */
+    font-size: 20px;
+    text-align: center;
+    padding: 20px; /* Padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+}
